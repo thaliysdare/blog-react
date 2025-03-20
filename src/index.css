@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+nav a {
+  font-weight: 500;
+  text-decoration: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.bg-black-translucent {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.documento-html{
+  font-size: 1.125rem;
+  line-height: 1.75;
+  color: white;
+  text-align: justify;
+}
+
+.documento-html h1 {
+  font-size: 2.25rem;
+  line-height: 1.25;
+  font-weight: 800;
+  color: white;
+}
+
+.documento-html h2 {
+  font-size: 1.875rem;
+  line-height: 1.25;
+  font-weight: 700;
+  color: white;
+}
+
+.documento-html h3 {
+  font-size: 1.5rem;
+  line-height: 1.25;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1.25rem;
+}
+
+.documento-html h4 {
+  font-size: 1.25rem;
+  line-height: 1.25;
+  font-weight: 600;
+  color: white;
+}
+
+.documento-html p {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.documento-html blockquote {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  border-left: 2px solid var(--color-yellow-600);
+}
+
+.documento-html ul {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: 1.5rem;
+  list-style: disc;
+}
+
+.documento-html ul li {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.documento-html ul li p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.documento-html mark {
+  background-color: var(--color-yellow-600);
+  color: white;
+  border-radius: 0.25rem;
+  padding: calc(var(--spacing) * 0.5);
+}
