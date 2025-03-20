@@ -1,50 +1,68 @@
-# React + TypeScript + Vite
+# Blog Pessoal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto de um blog pessoal desenvolvido em React com TypeScript. O objetivo do projeto é criar uma plataforma para exibir artigos, tutoriais e outros conteúdos organizados por categorias e tipos de documentos.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Página Inicial**: Exibe os destaques e uma lista de documentos organizados.
+- **Filtro por Categoria e Tipo**: Permite filtrar documentos por categorias e tipos específicos.
+- **Página de Documentos**: Lista todos os documentos disponíveis com opções de filtro.
+- **Página de Documento Detalhado**: Exibe o conteúdo completo de um documento selecionado.
+- **Responsividade**: Layout adaptado para dispositivos móveis e desktops.
 
-## Expanding the ESLint configuration
+## Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React**: Biblioteca para construção da interface do usuário.
+- **TypeScript**: Superset do JavaScript para tipagem estática.
+- **React Router**: Gerenciamento de rotas no frontend.
+- **Tailwind CSS**: Framework CSS para estilização.
 
-- Configure the top-level `parserOptions` property like this:
+## Estrutura do Projeto
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```plaintext
+src/
+├── assets/                # Arquivos estáticos e exemplos de dados
+├── componentes/           # Componentes reutilizáveis (Navbar, Card, etc.)
+├── interfaces/            # Definições de tipos e interfaces
+├── paginas/               # Páginas principais do projeto (Inicio, Documentos, etc.)
+├── services/              # Serviços para lógica de negócios e manipulação de dados
+└── App.tsx                # Arquivo principal do aplicativo
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+## Como Executar o Projeto
+1. **Clone o repositório**:
+```git
+git clone https://github.com/seu-usuario/blog-pessoal.git
+cd blog-pessoal
 ```
+
+2. **Instale as dependências**:
+```cmd 
+npm install
+```
+
+3. **Inicie o servidor de desenvolvimento**:
+```cmd 
+npm start
+```
+
+4. **Acesse no navegador**:
+  - O projeto estará disponível em http://localhost:5173.
+
+## Exemplos de Páginas
+**Página Inicial**<br/>
+![Página inicial](./documentacao/pagina_inicial.png)
+
+**Página de Documentos**<br/>
+![Página documentos](./documentacao/pagina_documentos.png)
+
+**Página de Documento**<br/>
+![Página documento](./documentacao/pagina_documento.png)
+
+**Contribuição**<br/>
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
+
+**Licença**<br/>
+Este projeto está licenciado sob a MIT License.
+
+Desenvolvido com ❤️ por Thaliys Daré.
